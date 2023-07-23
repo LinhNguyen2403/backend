@@ -21,9 +21,8 @@ public class Ex3Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		Employee e1= new Employee(); e1.setId("001"); e1.setName("Nguyen Phuc Tue");e1.setPhone("0001");
-		Employee e2= new Employee(); e1.setId("002"); e1.setName("Vuong Duy Hieu");e1.setPhone("0002");
-		employeeRepository.employeeList.add(e1);
-		employeeRepository.employeeList.add(e2);
+		Employee e2= new Employee(); e2.setId("002"); e2.setName("Vuong Duy Hieu");e2.setPhone("0002");
+		employeeRepository.employeeList.addAll(	Arrays.asList(e1,e2));
 
 
 	}

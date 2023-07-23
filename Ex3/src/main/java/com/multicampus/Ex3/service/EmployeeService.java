@@ -12,7 +12,21 @@ public class EmployeeService {
     @Autowired
     EmployeeRepository employeeRepository;
 
-    public List<Employee> getAllEmployee() {
-        return employeeRepository.getAllEmp();
+    public List<Employee> getAllEmployeeService() {
+        return employeeRepository.getAllEmpRepo();
     }
+
+    public String addNewEmpService(Employee emp) {
+        return employeeRepository.addNewEmpRepo(emp);
+    }
+
+    public String deldeleteEmpService(String id) {
+        return employeeRepository.deldeleteEmpRepo(id);
+    }
+
+    public String updateEmpService(Employee emp) {
+        return employeeRepository.updateEmpRepo(emp);
+    }
+
+
 }
