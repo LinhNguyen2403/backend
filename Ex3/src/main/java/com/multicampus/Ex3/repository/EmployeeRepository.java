@@ -1,7 +1,6 @@
 package com.multicampus.Ex3.repository;
 
 import com.multicampus.Ex3.model.Employee;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
